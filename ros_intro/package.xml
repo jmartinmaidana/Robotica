@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ros_intro</name>
+  <version>0.1.0</version>
+  <description>Taller de introducción a ROS 2.</description>
+  <license>Apache-2.0</license>
+
+  <!-- Mandatory maintainer -->
+  <maintainer email="fraverta@dc.uba.ar">FranciscoRaverta</maintainer>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Generic dependencies -->
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>keyboard_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
