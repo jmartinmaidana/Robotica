@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>kfilter</name>
+  <version>0.0.0</version>
+  <description>The kfilter package</description>
+  <maintainer email="bruno@todo.todo">bruno</maintainer>
+
+  <license>TODO</license>
+
+
+  <!-- This is a package taken from https://kalman.sourceforge.net/ -->
+
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
