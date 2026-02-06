@@ -1,6 +1,6 @@
 For installation instructions, read INSTALL.txt.
 
-To use the kalman classes : holiwis
+To use the kalman classes :
 #include "kalman/ekfilter.hpp"
 
 Don't forget to link the .a (-lkalman) on UNIX/Linux or the .lib on Windows. 
