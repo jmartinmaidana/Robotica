@@ -7,9 +7,213 @@
 #include <cmath>
 using namespace robmovil;
 
+// NUEVO
+// NUEVO
+// NUEVO
+// NUEVO
+// NUEVO
+// NUEVO
+
+#define l_x = 0.175
+#define l_y = 0.175
+#define WHEEL_RADIUS 0.050
+#define ENCODER_TICKS 500.0
+
+PioneerOdometry::PioneerOdometry() : Node("nodeOdometry"), x_(0), y_(0), theta_(0), ticks_initialized_(false)
+{
+  // Nos suscribimos a los comandos de velocidad en el tópico "/robot/cmd_vel" de tipo geometry_msgs::Twist
+  twist_sub_ = this->create_subscription<geometry_msgs::msg::Twist>("/robot/cmd_vel", rclcpp::QoS(10), std::bind(&PioneerOdometry::on_velocity_cmd, this, std::placeholders::_1));
+
+  vel_pub_front_left_ = this->create_publisher<std_msgs::msg::Float64>("/robot/front_left_wheel/cmd_vel", rclcpp::QoS(10));
+  vel_pub_front_right_ = this->create_publisher<std_msgs::msg::Float64>("/robot/front_right_wheel/cmd_vel", rclcpp::QoS(10));
+  vel_pub_rear_left_ = this->create_publisher<std_msgs::msg::Float64>("/robot/rear_left_wheel/cmd_vel", rclcpp::QoS(10));
+  vel_pub_rear_right_ = this->create_publisher<std_msgs::msg::Float64>("/robot/rear_right_wheel/cmd_vel", rclcpp::QoS(10));
+  
+
+  encoder_sub_ =  this->create_subscription<robmovil_msgs::msg::MultiEncoderTicks>("/robot/encoders", rclcpp::QoS(10), std::bind(&PioneerOdometry::on_encoder_ticks, this, std::placeholders::_1));
+  
+  pub_odometry_ = this->create_publisher<nav_msgs::msg::Odometry>("/robot/odometry", rclcpp::QoS(10));
+  
+  tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
+}
+
+void PioneerOdometry::on_velocity_cmd(const geometry_msgs::msg::Twist::SharedPtr twist)
+{
+  double linear_x_velocity  = twist->linear.x;   //longitudinal velocity
+  double linear_y_velocity  = twist->linear.y;   //transversal velocity, no se utiliza en este robot
+  double angular_velocisgty = twist->angular.z;
+
+  double vFront_left  = (linear_x_velocity - linear_y_velocity - (l_x + l_y) * angular_velocity) / WHEEL_RADIUS;
+  double vFront_right  = (linear_x_velocity + linear_y_velocity + (l_x + l_y) * angular_velocity) / WHEEL_RADIUS;
+  double vRear_left  = (linear_x_velocity + linear_y_velocity - (l_x + l_y) * angular_velocity) / WHEEL_RADIUS;
+  double vRear_right  = (linear_x_velocity - linear_y_velocity + (l_x + l_y) * angular_velocity) / WHEEL_RADIUS;
+
+  // publish front_left velocity
+  {
+    std_msgs::msg::Float64 msg;
+    msg.data = vLeft;
+
+    vel_pub_front_left_->publish(msg);
+  }
+
+  // publish front_right velocity
+  {
+    std_msgs::msg::Float64 msg;
+    msg.data = vRight;
+
+    vel_pub_front_right_->publish(msg);
+  }
+
+  // publish rear_left velocity
+  {
+    std_msgs::msg::Float64 msg;
+    msg.data = vRight;
+
+    vel_pub_rear_left_->publish(msg);
+  }
+
+  // publish rear_right velocity
+  {
+    last_ticks_front_left_ = encoder->ticks_left.data;
+    last_ticks_front_right_ = encoder->ticks_right.data;
+    last_ticks_rear_left_ = encoder->ticks_right.data;
+    std_msgs::msg::Float64 msg;
+    msg.data = vRight;
+
+    vel_pub_rear_right_->publish(msg);
+  }
+}
+
+
+void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTicks::SharedPtr encoder)
+{
+  // La primera vez que llega un mensaje de encoders
+  // inicializo las variables de estado.
+  if (!ticks_initialized_) {
+    ticks_initialized_ = true;
+    last_ticks_front_left_ = encoder->ticks[0].data;
+    last_ticks_front_right_ = encoder->ticks[1].data;
+    last_ticks_rear_left_ = encoder->ticks[2].data;
+    last_ticks_rear_right_ = encoder->ticks[3].data;
+
+    
+    last_ticks_time = encoder->header.stamp;
+    return;
+  }
+
+  int32_t delta_ticks_front_left = encoder->ticks[0].data - last_ticks_front_left_;
+  int32_t delta_ticks_front_right = encoder->ticks[1].data - last_ticks_front_right_;
+  int32_t delta_ticks_rear_left = encoder->ticks[2].data - last_ticks_rear_left_;
+  int32_t delta_ticks_rear_right = encoder->ticks[3].data - last_ticks_rear_right_;
+
+
+  /* Utilizar este delta de tiempo entre momentos */
+  rclcpp::Time current_time(encoder->header.stamp);
+  double delta_t = (current_time - last_ticks_time).seconds();
+
+  double d_front_left = (delta_ticks_front_left  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
+  double d_front_right = (delta_ticks_front_left  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
+  double d_rear_left = (delta_ticks_rear_left  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
+  double d_rear_right = (delta_ticks_rear_right * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
+  double d = (d_front_left + d_front_right + d_rear_left + d_rear_right) / 4.0;
+
+  // calcular el desplazamiento relativo: delta_x, delta_y, delta_theta
+  double delta_theta = (d_front_right + d_rear_right - d_front_left - d_rear_left) / (l_x + l_y);
+  double
+  double delta_x = d * cos(theta_);
+  double delta_y = d * sin(theta_);
+  //double delta_x = d * cos(theta_ + delta_theta / 2.0);
+  //double delta_y = d * sin(theta_ + delta_theta / 2.0);
+
+
+  /** Utilizar variables globales x_, y_, theta_ definidas en el .h */
+  //Calculo la nueva pose
+  //x_ += d * cos(theta_);
+  //y_ += d * sin(theta_);
+  x_ += delta_x;
+  y_ += delta_y;
+  theta_ += delta_theta;
+
+
+
+//VISUALIZACIÓN EN CONSOLA
+
+  double normalized_theta_rad = fmod(theta_, 2.0 * M_PI);
+  if (normalized_theta_rad < 0) {
+    normalized_theta_rad += 2.0 * M_PI;
+  }
+  // 2. Convertir a grados
+  double theta_en_grados = normalized_theta_rad * 180.0 / M_PI;
+
+  //calculo velocidades
+  double linear_velocity = d / delta_t;
+  double angular_velocity = delta_theta / delta_t;
+
+  RCLCPP_INFO(this->get_logger(), 
+              "Pose -> X: %.2f m, Y: %.2f m, Theta: %.2f deg | Vel -> Lin: %.2f m/s, Ang: %.2f rad/s", 
+              x_, y_, theta_en_grados, linear_velocity, angular_velocity);// Construir el mensaje odometry utilizando el esqueleto siguiente:
+  nav_msgs::msg::Odometry msg;
+
+//END VISUALIZACIÓN EN CONSOLA
+
+
+  msg.header.stamp = encoder->header.stamp;
+  msg.header.frame_id = "odom";
+  msg.child_frame_id = "base_link";
+
+  msg.pose.pose.position.x = x_;
+  msg.pose.pose.position.y = y_;
+  msg.pose.pose.position.z = 0;
+
+  tf2::Quaternion q;
+  q.setRPY(0, 0, theta_);  // roll, pitch, yaw
+  msg.pose.pose.orientation = tf2::toMsg(q);
+
+  msg.twist.twist.linear.x = d / delta_t;
+  msg.twist.twist.linear.y = 0;
+  msg.twist.twist.linear.z = 0;
+
+  msg.twist.twist.angular.x = 0;
+  msg.twist.twist.angular.y = 0;
+  msg.twist.twist.angular.z = delta_theta / delta_t;
+
+  pub_odometry_->publish( msg );
+
+  // Actualizo las variables de estado
+
+  last_ticks_left_ = encoder->ticks_left.data;
+  last_ticks_right_ = encoder->ticks_right.data;
+  last_ticks_time = current_time;
+
+  /* Mando tambien un transform usando TF */
+
+  geometry_msgs::msg::TransformStamped t;
+  t.header.stamp = this->get_clock()->now();
+  t.header.frame_id = "odom";
+  t.child_frame_id = "base_link";
+  t.transform.translation.x = msg.pose.pose.position.x;
+  t.transform.translation.y = msg.pose.pose.position.y;
+  t.transform.translation.z = msg.pose.pose.position.z;
+  t.transform.rotation = msg.pose.pose.orientation;
+
+  tf_broadcaster_->sendTransform(t);
+
+
+}
+
+
+
+// VIEJO
+// VIEJO
+// VIEJO
+// VIEJO
+// VIEJO
+// VIEJO
+
 #define WHEEL_BASELINE 0.331
 #define WHEEL_RADIUS 0.0975
 #define ENCODER_TICKS 500.0
+
 
 PioneerOdometry::PioneerOdometry() : Node("nodeOdometry"), x_(0), y_(0), theta_(0), ticks_initialized_(false)
 {
@@ -20,7 +224,6 @@ PioneerOdometry::PioneerOdometry() : Node("nodeOdometry"), x_(0), y_(0), theta_(
   vel_pub_right_ = this->create_publisher<std_msgs::msg::Float64>("/robot/right_wheel/cmd_vel", rclcpp::QoS(10));
 
   encoder_sub_ =  this->create_subscription<robmovil_msgs::msg::EncoderTicks>("/robot/encoders", rclcpp::QoS(10), std::bind(&PioneerOdometry::on_encoder_ticks, this, std::placeholders::_1));
-  
   pub_odometry_ = this->create_publisher<nav_msgs::msg::Odometry>("/robot/odometry", rclcpp::QoS(10));
   
   tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
@@ -29,6 +232,8 @@ PioneerOdometry::PioneerOdometry() : Node("nodeOdometry"), x_(0), y_(0), theta_(
 void PioneerOdometry::on_velocity_cmd(const geometry_msgs::msg::Twist::SharedPtr twist)
 {
   double linear_velocity  = twist->linear.x;
+
+  double linear_velocity  = twist->linear.y;
   double angular_velocity = twist->angular.z;
 
   double vRight = (linear_velocity + (angular_velocity * WHEEL_BASELINE / 2.0)) / WHEEL_RADIUS;
@@ -79,6 +284,7 @@ void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::EncoderTicks::S
   double delta_theta = (d_der - d_izq) / WHEEL_BASELINE;
   double delta_x = d * cos(theta_);
   double delta_y = d * sin(theta_);
+  
   //double delta_x = d * cos(theta_ + delta_theta / 2.0);
   //double delta_y = d * sin(theta_ + delta_theta / 2.0);
 
