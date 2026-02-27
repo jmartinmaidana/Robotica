@@ -1,58 +1,27 @@
 root@d89646191bf2:~/ros2_ws# colcon build
 Starting >>> robmovil_msgs
-Starting >>> sim_ros2_interface
-Finished <<< sim_ros2_interface [0.17s]                                                                 
-Finished <<< robmovil_msgs [0.42s]                     
+[0.276s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/ros2_ws/install/sim_ros2_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.276s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/root/ros2_ws/install/robmovil_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.277s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/ros2_ws/install/sim_ros2_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.277s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/root/ros2_ws/install/robmovil_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+Finished <<< robmovil_msgs [5.10s]                    
 Starting >>> modelo_diferencial
---- stderr: modelo_diferencial                             
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp: In constructor ‘robmovil::PioneerOdometry::PioneerOdometry()’:
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:26:65: error: ‘MultiEncoderTicks’ is not a member of ‘robmovil_msgs::msg’; did you mean ‘EncoderTicks’?
-   26 |   encoder_sub_ =  this->create_subscription<robmovil_msgs::msg::MultiEncoderTicks>(
-      |                                                                 ^~~~~~~~~~~~~~~~~
-      |                                                                 EncoderTicks
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:26:83: error: no matching function for call to ‘robmovil::PioneerOdometry::create_subscription<<expression error> >(const char [16], rclcpp::QoS, std::_Bind_helper<false, void (robmovil::PioneerOdometry::*)(std::shared_ptr<robmovil_msgs::msg::EncoderTicks_<std::allocator<void> > >), robmovil::PioneerOdometry*, const std::_Placeholder<1>&>::type)’
-   26 |   encoder_sub_ =  this->create_subscription<robmovil_msgs::msg::MultiEncoderTicks>(
-      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-   27 |           "/robot/encoders", rclcpp::QoS(10), std::bind(&PioneerOdometry::on_encoder_ticks, this, std::placeholders::_1));
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
-                 from /root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.h:3,
-                 from /root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:1:
-/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1: note: candidate: ‘template<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)’
-   92 | Node::create_subscription(
-      | ^~~~
-/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1: note:   template argument deduction/substitution failed:
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:26:83: error: template argument 1 is invalid
-   26 |   encoder_sub_ =  this->create_subscription<robmovil_msgs::msg::MultiEncoderTicks>(
-      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-   27 |           "/robot/encoders", rclcpp::QoS(10), std::bind(&PioneerOdometry::on_encoder_ticks, this, std::placeholders::_1));
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp: At global scope:
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:80:66: error: ‘MultiEncoderTicks’ in namespace ‘robmovil_msgs::msg’ does not name a type; did you mean ‘EncoderTicks’?
-   80 | void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTicks::SharedPtr encoder)
-      |                                                                  ^~~~~~~~~~~~~~~~~
-      |                                                                  EncoderTicks
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:80:95: error: expected unqualified-id before ‘encoder’
-   80 | void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTicks::SharedPtr encoder)
-      |                                                                                               ^~~~~~~
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:80:94: error: expected ‘)’ before ‘encoder’
-   80 | void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTicks::SharedPtr encoder)
-      |                                       ~                                                      ^~~~~~~~
-      |                                                                                              )
-/root/ros2_ws/src/robotica/modelo_diferencial/src/pioneer_odometry.cpp:80:95: error: expected initializer before ‘encoder’
-   80 | void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTicks::SharedPtr encoder)
-      |                                                                                               ^~~~~~~
-gmake[2]: *** [CMakeFiles/pioneer_odometry_node.dir/build.make:90: CMakeFiles/pioneer_odometry_node.dir/src/pioneer_odometry.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pioneer_odometry_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
+Starting >>> sim_ros2_interface
+--- stderr: modelo_diferencial                                                                       
+CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+  ament_package_xml() package name 'modelo_diferencial' in '/package.xml'
+  does not match current PROJECT_NAME 'Ej1'.  You must call project() with
+  the same package name before.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+  CMakeLists.txt:56 (ament_package)
+
+
 ---
-Failed   <<< modelo_diferencial [4.14s, exited with code 2]
+Failed   <<< modelo_diferencial [1.26s, exited with code 1]
+Aborted  <<< sim_ros2_interface [2.56s]                           
 
-Summary: 2 packages finished [4.78s]
+Summary: 1 package finished [7.87s]
   1 package failed: modelo_diferencial
+  1 package aborted: sim_ros2_interface
   1 package had stderr output: modelo_diferencial
-root@d89646191bf2:~/ros2_ws# 
-
