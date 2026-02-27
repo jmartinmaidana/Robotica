@@ -13,4 +13,21 @@ CMake Error at CMakeLists.txt:24 (find_package):
   "robmovil_msgs_DIR" to a directory containing one of the above files.  If
   "robmovil_msgs" provides a separate development package or SDK, be sure it
   has been installed.
+------------------------
+
+root@d89646191bf2:~/ros2_ws# colcon build
+Starting >>> robmovil_msgs
+Starting >>> sim_ros2_interface
+Finished <<< sim_ros2_interface [0.16s]                               
+Finished <<< robmovil_msgs [0.39s]                     
+Starting >>> modelo_diferencial
+--- stderr: modelo_diferencial                   
+CMake Error: The source "/root/ros2_ws/src/robotica/modelo_diferencial/CMakeLists.txt" does not match the source "/root/ros2_ws/src/robotica/Ej1/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+---
+Failed   <<< modelo_diferencial [0.03s, exited with code 1]
+
+Summary: 2 packages finished [0.63s]
+  1 package failed: modelo_diferencial
+  1 package had stderr output: modelo_diferencial
+root@d89646191bf2:~/ros2_ws# 
 
