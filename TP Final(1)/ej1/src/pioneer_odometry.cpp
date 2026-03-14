@@ -101,7 +101,7 @@ void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTic
   double delta_t = (current_time - last_ticks_time).seconds();
 
   double d_front_left  = (delta_ticks_front_left  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
-  double d_front_right = (delta_ticks_front_left  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
+  double d_front_right = (delta_ticks_front_right  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
   double d_rear_left   = (delta_ticks_rear_left   * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
   double d_rear_right  = (delta_ticks_rear_right  * WHEEL_RADIUS * 2.0 * M_PI) / ENCODER_TICKS;
   // d_rueda calcula la distancia que recorre dicha rueda basado en la cantidad de vueltas que dio la misma la cual 
