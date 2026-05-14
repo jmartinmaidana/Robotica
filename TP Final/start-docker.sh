@@ -59,8 +59,8 @@ start(){
 }
 
 down(){
-  run "docker stop ros2_robotica"
-  run "docker rm ros2_robotica"
+  run "docker stop ros2_robotica || true"
+  run "docker rm ros2_robotica || true"
 }
 
 rebuild(){
@@ -97,4 +97,3 @@ elif [[ $1 = "open" ]]; then
 else
         usage
 fi
-

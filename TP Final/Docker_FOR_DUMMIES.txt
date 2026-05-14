@@ -2,14 +2,18 @@ En una terminal abierta en Escritorio/Docker
 Correr  ls -l /run/user/$(id -u)/docker.sock
 Si da error dockerd-rootless.sh &
 Luego, hacer export DOCKER_HOST=unix:///run/user/$(id -u)/docker.sock
+
+//NOTA: para notebook ejecuta: newgrp docker (para recargar credencials y no usar sudo)
 Luego bash start-docker.sh start
 Luego bash start-docker.sh open
 Done, ya estamos en el volume
 
 Ahora cambiamos el directorio a ros2 con cd ros2_ws/
-Luego colcon build
-Y luego source install/setup.bash
 
+
+Para editar los archivos y agregar paquetes  y compilar con colcon build:
+bash actualizar_coppelia.sh (en ~/ros2_ws/src/robotica)
+Y luego source install/setup.bash
 
 Luego, lanzamos Coppelia con coppeliaSim.sh
 Dentro de Coppelia, File > Open Scene, la ruta /root/ros2_ws/src/robotica/coppeliaSim, y abrir el archivo omni_ekf.ttt

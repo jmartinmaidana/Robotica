@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Instalación de dependencias generales
 # --------------------
 RUN apt-get update && apt-get install -y \
-    gedit nano wget evince vim \
+    gedit nano wget evince vim neovim micro \
     ros-humble-gazebo-ros-pkgs ros-humble-turtlebot3* ros-humble-urdf-tutorial \
     ros-humble-rqt-tf-tree python3-pip tree unzip libglu1-mesa libxi6 libxmu6 \
     libglu1 libgl1-mesa-glx libxcb-xinerama0 libsdl1.2-dev ros-humble-imu-tools\
@@ -40,6 +40,7 @@ RUN apt-get update && apt-get install -y git && apt-get install -y \
 RUN git clone --depth 1 https://github.com/CoppeliaRobotics/simROS2.git sim_ros2_interface \
     && cd sim_ros2_interface && git fetch --tags && git checkout coppeliasim-v4.7.0-rev2 
 WORKDIR /root/ros2_ws
+
 ENV COPPELIASIM_ROOT_DIR="/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04"
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && colcon build --symlink-install --cmake-args -DCOPPELIASIM_ROOT_DIR=$COPPELIASIM_ROOT_DIR"
 
