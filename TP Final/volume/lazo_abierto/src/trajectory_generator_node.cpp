@@ -12,6 +12,8 @@
 // Forward declarations
 void build_sin_trajectory(double, double, double, double, robmovil_msgs::msg::Trajectory&, nav_msgs::msg::Path&);
 void build_spline_trajectory(double, std::vector<std::vector<double>>&, robmovil_msgs::msg::Trajectory&, nav_msgs::msg::Path&);
+// 1. Agregarla a las declaraciones iniciales:
+void build_square_trajectory(double, robmovil_msgs::msg::Trajectory&, nav_msgs::msg::Path&);
 
 int main(int argc, char** argv)
 {
@@ -76,6 +78,10 @@ int main(int argc, char** argv)
     
     build_spline_trajectory(stepping, spline_waypoints, trajectory_msg, path_msg);
     
+  } else if (trajectory_type == "square")
+  {
+    double stepping = trajectory_generator_node->declare_parameter("stepping", 0.05);
+    build_square_trajectory(stepping, trajectory_msg, path_msg);
   }
 
   trajectory_publisher->publish( trajectory_msg );
@@ -276,5 +282,53 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>>& 
       path_msg.poses.push_back(stamped_pose_msg);  
     }
   }
-
 }
+
+  void build_square_trajectory(double stepping, robmovil_msgs::msg::Trajectory& trajectory_msg, nav_msgs::msg::Path& path_msg)
+  {
+      // Lados del cuadrado: de (1,1) a (1,-1), a (-1,-1), a (-1,1), a (1,1)
+      std::vector<std::pair<double, double>> corners = {{1, 1}, {1, -1}, {-1, -1}, {-1, 1}, {1, 1}};
+      double current_time = 0.0;
+
+      for (size_t i = 0; i < corners.size() - 1; ++i) {
+          double start_x = corners[i].first;
+          double start_y = corners[i].second;
+          double end_x = corners[i+1].first;
+          double end_y = corners[i+1].second;
+
+          // Distancia del lado (sabemos que es 2)
+          double dist = std::hypot(end_x - start_x, end_y - start_y);
+          
+          for (double d = 0; d < dist; d += stepping) {
+              double ratio = d / dist;
+              double x = start_x + ratio * (end_x - start_x);
+              double y = start_y + ratio * (end_y - start_y);
+
+              // Orientación "opuesta al centro" (atan2(y, x))
+              double theta = atan2(y, x);
+
+              // Armamos el punto (igual que en tus otras funciones)
+              robmovil_msgs::msg::TrajectoryPoint point_msg;
+              point_msg.time_from_start = rclcpp::Duration::from_seconds(current_time);
+              point_msg.transform.translation.x = x;
+              point_msg.transform.translation.y = y;
+              
+              tf2::Quaternion q;
+              q.setRPY(0, 0, theta);
+              point_msg.transform.rotation = tf2::toMsg(q);
+
+              trajectory_msg.points.push_back(point_msg);
+
+              // Para que se dibuje en RViz
+              geometry_msgs::msg::PoseStamped stamped_pose_msg;
+              stamped_pose_msg.header.stamp = path_msg.header.stamp;
+              stamped_pose_msg.header.frame_id = path_msg.header.frame_id;
+              stamped_pose_msg.pose.position.x = x;
+              stamped_pose_msg.pose.position.y = y;
+              stamped_pose_msg.pose.orientation = tf2::toMsg(q);
+              path_msg.poses.push_back(stamped_pose_msg);
+
+              current_time += stepping;
+          }
+      }
+  }

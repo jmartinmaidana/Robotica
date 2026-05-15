@@ -26,8 +26,8 @@ find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
-find_package(lazo_abierto REQUIRED)
 find_package(angles REQUIRED)
+find_package(lazo_abierto REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -41,7 +41,7 @@ find_package(angles REQUIRED)
 #catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES robmovil_ekf
-#   CATKIN_DEPENDS roscpp tf2_ros lazo_abierto
+#   CATKIN_DEPENDS roscpp tf2_ros ej2
 #  DEPENDS system_lib
 #)
 
@@ -54,20 +54,24 @@ find_package(angles REQUIRED)
 # include_directories(include)
 include_directories(
   include
+  src
 )
 
 ## Declare a C++ executable
-add_executable(trajectory_follower_cl src/kinematic_position_controller_node.cpp src/KinematicPositionController.cpp)
-ament_target_dependencies(trajectory_follower_cl rclcpp ament_cmake geometry_msgs robmovil_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs lazo_abierto angles)
-target_link_libraries(trajectory_follower_cl lazo_abierto::trajectory_controller)
+add_executable(trajectory_follower_cl 
+  src/kinematic_position_controller_node.cpp 
+  src/KinematicPositionController.cpp
+)
+ament_target_dependencies(trajectory_follower_cl rclcpp ament_cmake geometry_msgs robmovil_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs angles lazo_abierto)
 
 
 
 
 
 add_executable(logger src/logger_node.cpp)
-ament_target_dependencies(logger rclcpp ament_cmake geometry_msgs robmovil_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs lazo_abierto angles) 
-target_link_libraries(logger lazo_abierto::trajectory_controller)
+ament_target_dependencies(logger rclcpp ament_cmake geometry_msgs robmovil_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs angles) 
+# target_link_libraries(logger ej2::trajectory_controller)
+
 ## Specify libraries to link a library or executable target against
 #target_link_libraries(trajectory_follower ${catkin_LIBRARIES})
 #target_link_libraries(logger ${catkin_LIBRARIES})
@@ -90,9 +94,9 @@ install(TARGETS
 #)
 
 # Install launch files
-install(DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}/
-)
+# install(DIRECTORY launch
+#   DESTINATION share/${PROJECT_NAME}/
+# )
 
 ament_export_include_directories(include)
 

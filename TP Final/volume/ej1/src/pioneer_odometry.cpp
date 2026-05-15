@@ -114,9 +114,11 @@ void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTic
   double delta_theta   = (-d_front_left + d_front_right - d_rear_left + d_rear_right) / (4.0 * (L_X + L_Y));
 
   // Transformación al marco global del mapa (Odometría)
-  x_ += delta_x_local * cos(theta_) - delta_y_local * sin(theta_);
-  y_ += delta_x_local * sin(theta_) + delta_y_local * cos(theta_);
+  double theta_mid = theta_ + delta_theta / 2.0; 
+  x_ += delta_x_local * cos(theta_mid) - delta_y_local * sin(theta_mid);
+  y_ += delta_x_local * sin(theta_mid) + delta_y_local * cos(theta_mid);
   theta_ += delta_theta;
+  theta_ = atan2(sin(theta_), cos(theta_)); // normalizar a (-pi, pi)
 
 
 //VISUALIZACIÓN EN CONSOLA

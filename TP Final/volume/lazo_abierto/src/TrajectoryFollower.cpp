@@ -31,10 +31,10 @@ void TrajectoryFollower::timerCallback()
   rclcpp::Time t = this->now();
   RCLCPP_INFO(this->get_logger(), "t: %.9f", t.seconds());
 
-  // Aplicar la ley de control
+  // Aplicar la ley de control (soporta ahora vx, vy para robots omnidireccionales)
 
-  double v, w;
-  if( not control(t, v, w) ) {
+  double vx, vy, w;
+  if( not control(t, vx, vy, w) ) {
     RCLCPP_INFO(this->get_logger(), "Trajectory finished");
     timer_->cancel();
     
@@ -44,11 +44,10 @@ void TrajectoryFollower::timerCallback()
   }
 
   // Crear mensaje
-
   geometry_msgs::msg::Twist cmd;
 
-  cmd.linear.x = v;
-  cmd.linear.y = 0;
+  cmd.linear.x = vx;
+  cmd.linear.y = vy;
   cmd.linear.z = 0;
 
   cmd.angular.x = 0;

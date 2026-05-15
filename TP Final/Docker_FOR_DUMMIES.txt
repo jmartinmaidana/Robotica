@@ -3,7 +3,8 @@ Correr  ls -l /run/user/$(id -u)/docker.sock
 Si da error dockerd-rootless.sh &
 Luego, hacer export DOCKER_HOST=unix:///run/user/$(id -u)/docker.sock
 
-//NOTA: para notebook ejecuta: newgrp docker (para recargar credencials y no usar sudo)
+//NOTA_NOTEBOOK: para notebook ejecuta: newgrp docker (para recargar credencials y no usar sudo)
+
 Luego bash start-docker.sh start
 Luego bash start-docker.sh open
 Done, ya estamos en el volume
@@ -11,16 +12,23 @@ Done, ya estamos en el volume
 Ahora cambiamos el directorio a ros2 con cd ros2_ws/
 
 
-Para editar los archivos y agregar paquetes  y compilar con colcon build:
+//NOTA_NOTEBOOK: Para editar los archivos y agregar paquetes  y compilar con colcon build:
 bash actualizar_coppelia.sh (en ~/ros2_ws/src/robotica)
+
 Y luego source install/setup.bash
 
 Luego, lanzamos Coppelia con coppeliaSim.sh
 Dentro de Coppelia, File > Open Scene, la ruta /root/ros2_ws/src/robotica/coppeliaSim, y abrir el archivo omni_ekf.ttt
 
 
-Para que correr el teleop keyboar y conrolar a lrobot con el teclado, correr el comando 
+Para que correr el teleop keyboard y conrolar al robot con el teclado, abrir una terminal en ~/Escritorio/Robotica/-main/TP Final y correr  correr el comando 
+bash start-docker.sh open
+y luego correr:
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:=/robot/cmd_vel
 
-Y en otra terminal correr 
+Y en otra terminal correr:
+bash start-docker.sh open
+cd ros2_ws
+bash src/robotica/actualizar_coppelia.sh 
+source install/setup.bash
 ros2 run ej1 pioneer_odometry_node

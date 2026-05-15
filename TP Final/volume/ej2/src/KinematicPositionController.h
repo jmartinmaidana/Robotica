@@ -16,7 +16,13 @@ class KinematicPositionController : public TrajectoryFollower
     
     KinematicPositionController();
 
-    bool control(const rclcpp::Time& t, double& vx, double& vy, double& w);
+    // Implementación obligatoria de la función virtual pura de la clase base
+    bool control(const rclcpp::Time& t, double& v, double& w) override {
+      double vy = 0.0;
+      return control(t, v, vy, w);
+    }
+
+    bool control(const rclcpp::Time& t, double& vx, double& vy, double& w) override;
 
   private:
 
@@ -24,6 +30,7 @@ class KinematicPositionController : public TrajectoryFollower
     tf2_ros::TransformListener transform_listener_;
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr expected_position_pub;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr current_pos_sub_;
+    rclcpp::Publisher<robmovil_msgs::msg::Trajectory>::SharedPtr trajectory_pub_;
 
     
     GoalSelectionType goal_selection_;

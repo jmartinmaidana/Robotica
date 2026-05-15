@@ -18,7 +18,18 @@ class TrajectoryFollower : public rclcpp::Node
      * @return
      *   false cuando termina de ejecutar la trayectoria, true en caso contrario.
      */
+    // Legacy pure virtual for differential robots (linear v, angular w)
     virtual bool control(const rclcpp::Time& t, double& v, double& w) = 0;
+
+    // Omnidirectional control (vx, vy, w). Default implementation
+    // calls legacy `control(t, v, w)` and sets `vy = 0`. Derived
+    // classes may override this to implement full 3-DOF control.
+    virtual bool control(const rclcpp::Time& t, double& vx, double& vy, double& w)
+    {
+      bool cont = control(t, vx, w);
+      vy = 0.0;
+      return cont;
+    }
 
     const rclcpp::Time& getInitialTime() const
     { return t0_; }

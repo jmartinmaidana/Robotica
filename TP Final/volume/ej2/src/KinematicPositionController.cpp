@@ -2,6 +2,7 @@
 #include "KinematicPositionController.h"
 
 
+
 KinematicPositionController::KinematicPositionController() :
   TrajectoryFollower(), tfBuffer_(this->get_clock()),transform_listener_( tfBuffer_ )
 {
@@ -13,10 +14,10 @@ KinematicPositionController::KinematicPositionController() :
 
     current_pos_sub_ = this->create_subscription<nav_msgs::msg::Odometry>("/robot/odometry", rclcpp::QoS(10), std::bind(&KinematicPositionController::getCurrentPoseFromOdometry, this, std::placeholders::_1));
           
-    std::string goal_selection = this->declare_parameter("goal_selection", "TIME_BASED");
-    fixed_goal_x_ = this->declare_parameter("fixed_goal_x", 3.0);
-    fixed_goal_y_ = this->declare_parameter("fixed_goal_y", 0.0);
-    fixed_goal_a_ = this->declare_parameter("fixed_goal_a", -M_PI_2);
+    std::string goal_selection = this->declare_parameter("goal_selection", "PURSUIT_BASED");
+    fixed_goal_x_ = this->declare_parameter("fixed_goal_x", 2.0);
+    fixed_goal_y_ = this->declare_parameter("fixed_goal_y", 1.0);
+    fixed_goal_a_ = this->declare_parameter("fixed_goal_a", 1.5);
     
     if(goal_selection == "TIME_BASED")
       goal_selection_ = TIME_BASED;
@@ -58,9 +59,9 @@ void KinematicPositionController::getCurrentPoseFromOdometry(const nav_msgs::msg
 // #define K_THETA 0.5
 // #define TOL 0.001
 
-#define K_PX 1
-#define K_PY 1
-#define K_PTHETA 1
+#define K_PX 1.
+#define K_PY 1.
+#define K_PTHETA 1.
 
 #define LOOKAHEAD 0.5
 int last_idx = 0;
@@ -86,7 +87,7 @@ bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, dou
   
   double dx = goal_x - current_x;
   double dy = goal_y - current_y;
-  double dtheta =goal_a - current_a; // VER SI ESTA RESTA ES ASI O AL REVES
+  double dtheta = angles::normalize_angle(goal_a - current_a); // VER SI ESTA RESTA ES ASI O AL REVES
   double ex = dx * cos(goal_a) + dy * sin(goal_a);
   double ey = -dx * sin(goal_a) + dy * cos(goal_a);
 
@@ -115,11 +116,11 @@ bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, dou
   //   v = K_RHO*rho;
   //   w = K_ALPHA*alpha+K_BETA*beta;
   // }
-  ----
+  
 
   
-  RCLCPP_INFO(this->get_logger(), "atan2: %.2f, theta siegwpoint_art: %.2f, expected_atheta: %.2f, rho: %.2f, alpha: %.2f, beta: %.2f, v: %.2f, w: %.2f",
-            atan2(dy, dx), theta, current_a, rho, alpha, beta, v, w);
+    RCLCPP_INFO(this->get_logger(), "ex: %.2f, ey: %.2f, dtheta: %.2f, vx: %.2f, vy: %.2f, wz: %.2f",
+            ex, ey, dtheta, vx, vy, wz);
 
   RCLCPP_INFO(this->get_logger(), "goal_x: %.2f, goal_y: %.2f, goal_a: %.2f, current_x: %.2f, current_y: %.2f, current_a: %.2f",
             goal_x, goal_y, goal_a, current_x, current_y, current_a);
@@ -160,9 +161,11 @@ bool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time& t, dou
     }
   }
 
-  for (unsigned int i = index_closest; i < trajectory.points.size(); i++) {
+  for (unsigned int i = 0; i < trajectory.points.size(); i++) {
   
-    const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[i];
+    unsigned int circular_idx = (index_closest + i) % trajectory.points.size();
+
+    const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[circular_idx];
     double wpoint_x = wpoint.transform.translation.x;
     double wpoint_y = wpoint.transform.translation.y;
     double wpoint_a = tf2::getYaw(wpoint.transform.rotation);
