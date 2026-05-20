@@ -47,20 +47,16 @@ include_directories(
 ## Declare a C++ executable
 add_library(trajectory_controller src/TrajectoryFollower.cpp)
 
-add_executable(trajectory_follower src/trajectory_follower_node.cpp src/FeedForwardController.cpp)
 add_executable(trajectory_generator src/trajectory_generator_node.cpp)
 
 ament_target_dependencies(trajectory_controller rclcpp geometry_msgs robmovil_msgs nav_msgs tf2 tf2_geometry_msgs)
-ament_target_dependencies(trajectory_follower rclcpp geometry_msgs robmovil_msgs nav_msgs tf2 tf2_geometry_msgs)
 ament_target_dependencies(trajectory_generator rclcpp geometry_msgs robmovil_msgs nav_msgs tf2 tf2_geometry_msgs)
 
 add_library(lazo_abierto::trajectory_controller ALIAS trajectory_controller)
 
 ## Specify libraries to link a library or executable target against
-#target_link_libraries(trajectory_follower trajectory_controller ${catkin_LIBRARIES})
 #target_link_libraries(trajectory_generator ${catkin_LIBRARIES})
 
-target_link_libraries(trajectory_follower trajectory_controller)
 
 target_include_directories(trajectory_controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -69,7 +65,6 @@ target_include_directories(trajectory_controller PUBLIC
 # Install targets
 install(TARGETS
   trajectory_controller
-  #trajectory_follower
   #trajectory_generator
   EXPORT export_trajectory_controller
   DESTINATION lib/${PROJECT_NAME}
@@ -77,7 +72,6 @@ install(TARGETS
 
 install(TARGETS
   #trajectory_controller
-  trajectory_follower
   trajectory_generator
   #EXPORT export_trajectory_controller
   DESTINATION lib/${PROJECT_NAME}

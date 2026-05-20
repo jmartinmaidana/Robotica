@@ -54,7 +54,7 @@ run(){
 }
 
 start(){
-        xhost +local:docker
+        xhost +local:root
         run "podman run --rm --name ros2_robotica --shm-size=256m -v ./volume2:/root/ros2_ws/src/robotica --env DISPLAY=$DISPLAY --volume /tmp/.X11-unix:/tmp/.X11-unix:rw --env QT_X11_NO_MITSHM=1 -it -d ros2_robotica "
   # -it is for having an interactive terminal, and -d is enable reenter after closing the terminal
 }
@@ -98,4 +98,3 @@ elif [[ $1 = "open" ]]; then
 else
         usage
 fi
-

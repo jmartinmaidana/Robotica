@@ -20,7 +20,7 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}],
             remappings=[
                 ('cmd_vel', '/robot/cmd_vel')
-            ]
+            ] #VER SI ESTO ES NECESARIO O SE PUEDE PUBLICAR DIRECTAMENTE EN /cmd_vel DESDE EL CONTROLADOR
         ),
 
         # Node(

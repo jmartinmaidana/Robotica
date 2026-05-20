@@ -34,10 +34,10 @@ int main(int argc, char** argv)
 
   //trajectory_msg.header.seq = 0;
   trajectory_msg.header.stamp = trajectory_generator_node->now();
-  trajectory_msg.header.frame_id = "odom";
+  trajectory_msg.header.frame_id = "map";
 
   path_msg.header.stamp = trajectory_generator_node->now();
-  path_msg.header.frame_id = "odom";
+  path_msg.header.frame_id = "map";
   
   // Parseo del tipo de trayectoria y parametros
   std::string trajectory_type = trajectory_generator_node->declare_parameter<std::string>("trajectory_type", "sin");
@@ -54,7 +54,7 @@ int main(int argc, char** argv)
   } else if (trajectory_type == "spline")
   {
     
-    std::vector<double> spline_waypoints_data = trajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {});
+    std::vector<double> spline_waypoints_data = trajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", std::vector<double>{});
     
     if(spline_waypoints_data.size() == 0 || spline_waypoints_data.size() % 4 != 0){
       RCLCPP_ERROR(trajectory_generator_node->get_logger(),"Trajectory waypoints data is not multiple of 4, it expects: time, position_x, position_y, orientation, velocity_x, velocity_y, velocity_orientation");

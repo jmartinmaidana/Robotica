@@ -10,6 +10,7 @@ git restore CMakeLists.txt package.xml meta/interfaces.txt
 echo "robmovil_msgs/msg/EncoderTicks" >> /root/ros2_ws/src/sim_ros2_interface/meta/interfaces.txt
 echo "robmovil_msgs/msg/MultiEncoderTicks" >> /root/ros2_ws/src/sim_ros2_interface/meta/interfaces.txt
 echo "rosgraph_msgs/msg/Clock" >> /root/ros2_ws/src/sim_ros2_interface/meta/interfaces.txt
+echo "geometry_msgs/msg/PoseArray" >> /root/ros2_ws/src/sim_ros2_interface/meta/interfaces.txt
 
 # 2. Agregar la dependencia en package.xml
 sed -i '/<depend>image_transport<\/depend>/a \ \ <depend>robmovil_msgs<\/depend>' /root/ros2_ws/src/sim_ros2_interface/package.xml

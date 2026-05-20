@@ -12,7 +12,8 @@ KinematicPositionController::KinematicPositionController() :
 
     expected_position_pub = this->create_publisher<geometry_msgs::msg::PoseStamped>("/goal_pose", rclcpp::QoS(10));
 
-    current_pos_sub_ = this->create_subscription<nav_msgs::msg::Odometry>("/robot/odometry", rclcpp::QoS(10), std::bind(&KinematicPositionController::getCurrentPoseFromOdometry, this, std::placeholders::_1));
+    // Comentamos la suscripcion a la odometria porque usaremos TF segun consigna 3.b
+    // current_pos_sub_ = this->create_subscription<nav_msgs::msg::Odometry>("/robot/odometry", rclcpp::QoS(10), std::bind(&KinematicPositionController::getCurrentPoseFromOdometry, this, std::placeholders::_1));
           
     std::string goal_selection = this->declare_parameter("goal_selection", "PURSUIT_BASED");
     fixed_goal_x_ = this->declare_parameter("fixed_goal_x", 2.0);
@@ -68,9 +69,20 @@ int last_idx = 0;
 
 bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, double& vy, double& wz)
 {
-  // Se obtiene la pose actual publicada por la odometria
+  // Se obtiene la pose actual publicada por la transformacion map -> base_link
   double current_x, current_y, current_a;
-  current_x = this->x; current_y = this->y; current_a = this->a;
+  try {
+    geometry_msgs::msg::TransformStamped transform = tfBuffer_.lookupTransform("map", "base_link", tf2::TimePointZero);
+    current_x = transform.transform.translation.x;
+    current_y = transform.transform.translation.y;
+    current_a = tf2::getYaw(transform.transform.rotation);
+    
+    // Actualizamos variables internas para los demas metodos (como getPursuitBasedGoal)
+    this->x = current_x; this->y = current_y; this->a = current_a;
+  } catch (const tf2::TransformException & ex) {
+    RCLCPP_WARN(this->get_logger(), "Esperando transformacion map -> base_link: %s", ex.what());
+    return true; // Retornamos true para no cancelar la trayectoria, solo esperamos
+  }
 
   // Se obtiene la pose objetivo actual a seguir
   double goal_x, goal_y, goal_a;
@@ -90,7 +102,8 @@ bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, dou
   double dtheta = angles::normalize_angle(goal_a - current_a); // VER SI ESTA RESTA ES ASI O AL REVES
   double ex = dx * cos(goal_a) + dy * sin(goal_a);
   double ey = -dx * sin(goal_a) + dy * cos(goal_a);
-
+  //double ex = dx * cos(current_a) + dy * sin(current_a);
+  //double ey = -dx * sin(current_a) + dy * cos(current_a);
   
 
   // Computar variables del sistema de control
