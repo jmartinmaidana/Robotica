@@ -100,10 +100,10 @@ bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, dou
   double dx = goal_x - current_x;
   double dy = goal_y - current_y;
   double dtheta = angles::normalize_angle(goal_a - current_a); // VER SI ESTA RESTA ES ASI O AL REVES
-  double ex = dx * cos(goal_a) + dy * sin(goal_a);
-  double ey = -dx * sin(goal_a) + dy * cos(goal_a);
-  //double ex = dx * cos(current_a) + dy * sin(current_a);
-  //double ey = -dx * sin(current_a) + dy * cos(current_a);
+  // double ex = dx * cos(goal_a) + dy * sin(goal_a);
+  // double ey = -dx * sin(goal_a) + dy * cos(goal_a);
+  double ex = dx * cos(current_a) + dy * sin(current_a);
+  double ey = -dx * sin(current_a) + dy * cos(current_a);
   
 
   // Computar variables del sistema de control

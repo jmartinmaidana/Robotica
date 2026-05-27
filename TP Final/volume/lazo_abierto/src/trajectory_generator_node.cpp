@@ -287,7 +287,7 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>>& 
   void build_square_trajectory(double stepping, robmovil_msgs::msg::Trajectory& trajectory_msg, nav_msgs::msg::Path& path_msg)
   {
       // Lados del cuadrado: de (1,1) a (1,-1), a (-1,-1), a (-1,1), a (1,1)
-      std::vector<std::pair<double, double>> corners = {{1, 1}, {1, -1}, {-1, -1}, {-1, 1}, {1, 1}};
+      std::vector<std::pair<double, double>> corners = {{2, 2}, {2, -2}, {-2, -2}, {-2, 2}, {2, 2}};
       double current_time = 0.0;
 
       for (size_t i = 0; i < corners.size() - 1; ++i) {
@@ -304,8 +304,8 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>>& 
               double x = start_x + ratio * (end_x - start_x);
               double y = start_y + ratio * (end_y - start_y);
 
-              // Orientación "opuesta al centro" (atan2(y, x))
-              double theta = atan2(y, x);
+              // Orientación "opuesta al centro" (radial, rotación gradual)
+              double theta = atan2(y, x) - M_PI / 4;
 
               // Armamos el punto (igual que en tus otras funciones)
               robmovil_msgs::msg::TrajectoryPoint point_msg;
