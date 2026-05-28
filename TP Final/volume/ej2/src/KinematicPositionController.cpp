@@ -1,5 +1,5 @@
 #include <angles/angles.h>
-#include "KinematicPositionController.h"
+#include "ej2/KinematicPositionController.h"
 
 
 
@@ -63,8 +63,8 @@ void KinematicPositionController::getCurrentPoseFromOdometry(const nav_msgs::msg
 #define K_PX 1.
 #define K_PY 1.
 #define K_PTHETA 1.
-
 #define LOOKAHEAD 0.5
+#define TOLERANCE 0.05
 int last_idx = 0;
 
 bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, double& vy, double& wz)
@@ -159,44 +159,33 @@ bool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time& t, dou
   if (trajectory.points.empty())
     return false;
 
-  double min_dist = std::numeric_limits<double>::max();
-  int index_closest = 0;
-
-  for (unsigned int i = 0; i < trajectory.points.size(); i++) {
-    const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[i];
-    double wpoint_x = wpoint.transform.translation.x;
-    double wpoint_y = wpoint.transform.translation.y;
-
+  // Avanzamos el índice objetivo (last_idx) si estamos más cerca que la distancia de LOOKAHEAD.
+  // Esto asegura que el robot persiga siempre un punto por delante y nunca retroceda erráticamente.
+  while (last_idx < (int)trajectory.points.size() - 1) {
+    double wpoint_x = trajectory.points[last_idx].transform.translation.x;
+    double wpoint_y = trajectory.points[last_idx].transform.translation.y;
     double d = dist2(current_x, current_y, wpoint_x, wpoint_y);
-    if (d < min_dist) {
-      min_dist = d;
-      index_closest = i;
-    }
-  }
-
-  for (unsigned int i = 0; i < trajectory.points.size(); i++) {
-  
-    unsigned int circular_idx = (index_closest + i) % trajectory.points.size();
-
-    const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[circular_idx];
-    double wpoint_x = wpoint.transform.translation.x;
-    double wpoint_y = wpoint.transform.translation.y;
-    double wpoint_a = tf2::getYaw(wpoint.transform.rotation);
-
-    double d = dist2(current_x, current_y, wpoint_x, wpoint_y);
-    if (d >= LOOKAHEAD) {
-      x = wpoint_x;
-      y = wpoint_y;
-      a = wpoint_a;
-      return true;
+    
+    if (d < LOOKAHEAD) {
+      last_idx++;
+    } else {
+      break;
     }
   }
 
   // --- 3. Si no hay más puntos adelante, usar el último punto ---
-  const robmovil_msgs::msg::TrajectoryPoint& last_wpoint = trajectory.points.back(); 
-  x = last_wpoint.transform.translation.x;
-  y = last_wpoint.transform.translation.y;
-  a = tf2::getYaw(last_wpoint.transform.rotation);
+  const robmovil_msgs::msg::TrajectoryPoint& target_wpoint = trajectory.points[last_idx]; 
+  x = target_wpoint.transform.translation.x;
+  y = target_wpoint.transform.translation.y;
+  a = tf2::getYaw(target_wpoint.transform.rotation);
+
+  // Si llegamos al final de la trayectoria y estamos lo suficientemente cerca, terminamos
+  if (last_idx >= (int)trajectory.points.size() - 1) {
+    double d = dist2(current_x, current_y, x, y);
+    if (d < TOLERANCE) {
+      return false; // Retornar false le indica a TrajectoryFollower que ya terminó
+    }
+  }
 
   return true;
 }

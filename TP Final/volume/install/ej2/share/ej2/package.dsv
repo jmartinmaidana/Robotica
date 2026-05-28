@@ -1,0 +1,8 @@
+source;share/ej2/hook/cmake_prefix_path.ps1
+source;share/ej2/hook/cmake_prefix_path.dsv
+source;share/ej2/hook/cmake_prefix_path.sh
+source;share/ej2/local_setup.bash
+source;share/ej2/local_setup.dsv
+source;share/ej2/local_setup.ps1
+source;share/ej2/local_setup.sh
+source;share/ej2/local_setup.zsh

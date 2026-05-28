@@ -1,0 +1,11 @@
+{
+  "package_name": "robmovil_msgs",
+  "non_idl_tuples": [
+    "/root/ros2_ws/src/robotica/robmovil_msgs:msg/EncoderTicks.msg",
+    "/root/ros2_ws/src/robotica/robmovil_msgs:msg/MultiEncoderTicks.msg",
+    "/root/ros2_ws/src/robotica/robmovil_msgs:msg/Trajectory.msg",
+    "/root/ros2_ws/src/robotica/robmovil_msgs:msg/TrajectoryPoint.msg",
+    "/root/ros2_ws/src/robotica/robmovil_msgs:msg/Landmark.msg",
+    "/root/ros2_ws/src/robotica/robmovil_msgs:msg/LandmarkArray.msg"
+  ]
+}

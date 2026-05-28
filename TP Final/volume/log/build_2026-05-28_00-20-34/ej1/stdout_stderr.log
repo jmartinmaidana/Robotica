@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target pioneer_odometry_node[0m
+[100%] Built target pioneer_odometry_node
+-- Install configuration: ""
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/lib/ej1/pioneer_odometry_node
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/package_run_dependencies/ej1
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/parent_prefix_path/ej1
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/ament_prefix_path.sh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/path.sh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/path.dsv
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.bash
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.sh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.zsh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/ej1/share/ej1/package.dsv
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/packages/ej1
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/cmake/ej1Config.cmake
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/cmake/ej1Config-version.cmake
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/package.xml

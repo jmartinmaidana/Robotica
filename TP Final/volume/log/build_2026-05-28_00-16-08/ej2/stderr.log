@@ -1,0 +1,29 @@
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_destroy_publisher[m[K’?
+   37 |   [01;31m[Ktrajectory_publisher[m[K = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/robot/trajectory", qos_profile);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[Krmw_destroy_publisher[m[K
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   37 |   trajectory_publisher = [01;31m[Kthis[m[K->create_publisher<trajectory_msgs::msg::JointTrajectory>("/robot/trajectory", qos_profile);
+      |                          [01;31m[K^~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:86:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   37 |   trajectory_publisher = this->create_publisher<trajectory_msgs::msg::JointTrajectory[01;31m[K>[m[K("/robot/trajectory", qos_profile);
+      |                                                                                      [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:88:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   37 |   trajectory_publisher = this->create_publisher<trajectory_msgs::msg::JointTrajectory>([01;35m[K"/robot/trajectory"[m[K, qos_profile);
+      |                                                                                        [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_generator_node.cpp:65:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   65 |     for(int i = 0; [01;35m[Ki < spline_waypoints_data.size()[m[K; i+=4)
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:[m[K In member function ‘[01m[Kbool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time&, double&, double&, double&)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:154:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_a[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  154 |   double [01;35m[Kcurrent_a[m[K = this->a;
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:149:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  149 | bool KinematicPositionController::getPursuitBasedGoal([01;35m[Kconst rclcpp::Time& t[m[K, double& x, double& y, double& a)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^[m[K
+gmake[2]: *** [CMakeFiles/trajectory_waypoints.dir/build.make:76: CMakeFiles/trajectory_waypoints.dir/src/trajectory_waypoints_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/trajectory_waypoints.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

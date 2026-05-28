@@ -9,7 +9,7 @@ using namespace robmovil;
 
 #define L_X 0.175
 #define L_Y 0.175
-#define WHEEL_RADIUS 0.050
+#define WHEEL_RADIUS 0.05 // 0.04889
 #define ENCODER_TICKS 500.0
 
 PioneerOdometry::PioneerOdometry() : Node("nodeOdometry"), x_(0), y_(0), theta_(0), ticks_initialized_(false)

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robmovil_msgs__py",
+		"source" : "/root/ros2_ws/src/robotica/build/robmovil_msgs/robmovil_msgs__py"
+	}
+}

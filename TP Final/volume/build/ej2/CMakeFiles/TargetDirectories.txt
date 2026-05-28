@@ -1,0 +1,14 @@
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/uninstall.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/ej2_uninstall.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/controllers_lib.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/trajectory_follower_cl.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/trajectory_generator.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/trajectory_waypoints.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/logger.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/test.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/edit_cache.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/rebuild_cache.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/list_install_components.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/install.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/install/local.dir
+/root/ros2_ws/src/robotica/build/ej2/CMakeFiles/install/strip.dir
