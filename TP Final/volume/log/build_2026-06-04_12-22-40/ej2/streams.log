@@ -1,0 +1,46 @@
+[0.012s] Invoking command in '/root/ros2_ws/src/robotica/build/ej2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej2 -- -j8 -l8
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target controllers_lib[0m
+[0.075s] [ 18%] Built target trajectory_generator
+[0.076s] [ 36%] Built target trajectory_waypoints
+[0.086s] [ 54%] Built target logger
+[0.090s] [ 63%] [32mBuilding CXX object CMakeFiles/controllers_lib.dir/src/KinematicPositionController.cpp.o[0m
+[2.502s] [01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:[m[K In member function ‘[01m[Kbool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time&, double&, double&, double&)[m[K’:
+[2.502s] [01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:149:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.502s]   149 | bool KinematicPositionController::getPursuitBasedGoal([01;35m[Kconst rclcpp::Time& t[m[K, double& x, double& y, double& a)
+[2.502s]       |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.162s] [ 72%] [32m[1mLinking CXX shared library libcontrollers_lib.so[0m
+[4.678s] [ 81%] Built target controllers_lib
+[4.709s] [ 90%] [32m[1mLinking CXX executable trajectory_follower_cl[0m
+[4.934s] [100%] Built target trajectory_follower_cl
+[4.945s] Invoked command in '/root/ros2_ws/src/robotica/build/ej2' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej2 -- -j8 -l8
+[4.946s] Invoking command in '/root/ros2_ws/src/robotica/build/ej2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/ej2
+[4.955s] -- Install configuration: ""
+[4.956s] -- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/libcontrollers_lib.so
+[4.962s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/libcontrollers_lib.so" to ""
+[4.963s] -- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl
+[4.964s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl" to ""
+[4.965s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_generator
+[4.966s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_waypoints
+[4.968s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/logger
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include/ej2
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include/ej2/TrajectoryFollower.h
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include/ej2/KinematicPositionController.h
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/launch
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/launch/lazo_abierto.launch.py
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/package_run_dependencies/ej2
+[4.969s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/parent_prefix_path/ej2
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/ament_prefix_path.sh
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/ament_prefix_path.dsv
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/path.sh
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/path.dsv
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.bash
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.sh
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.zsh
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.dsv
+[4.970s] -- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/package.dsv
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/packages/ej2
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/cmake/ej2Config.cmake
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/cmake/ej2Config-version.cmake
+[4.970s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/package.xml
+[4.971s] Invoked command in '/root/ros2_ws/src/robotica/build/ej2' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/ej2

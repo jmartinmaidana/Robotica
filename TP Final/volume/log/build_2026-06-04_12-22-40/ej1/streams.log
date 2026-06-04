@@ -1,0 +1,22 @@
+[0.013s] Invoking command in '/root/ros2_ws/src/robotica/build/ej1': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej1 -- -j8 -l8
+[0.077s] [100%] Built target pioneer_odometry_node
+[0.089s] Invoked command in '/root/ros2_ws/src/robotica/build/ej1' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej1 -- -j8 -l8
+[0.091s] Invoking command in '/root/ros2_ws/src/robotica/build/ej1': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/ej1
+[0.097s] -- Install configuration: ""
+[0.099s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/lib/ej1/pioneer_odometry_node
+[0.099s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/package_run_dependencies/ej1
+[0.099s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/parent_prefix_path/ej1
+[0.100s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/ament_prefix_path.sh
+[0.100s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/ament_prefix_path.dsv
+[0.100s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/path.sh
+[0.100s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/path.dsv
+[0.100s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.bash
+[0.100s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.sh
+[0.101s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.zsh
+[0.101s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.dsv
+[0.101s] -- Installing: /root/ros2_ws/src/robotica/install/ej1/share/ej1/package.dsv
+[0.101s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/packages/ej1
+[0.101s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/cmake/ej1Config.cmake
+[0.101s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/cmake/ej1Config-version.cmake
+[0.102s] -- Up-to-date: /root/ros2_ws/src/robotica/install/ej1/share/ej1/package.xml
+[0.103s] Invoked command in '/root/ros2_ws/src/robotica/build/ej1' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/ej1

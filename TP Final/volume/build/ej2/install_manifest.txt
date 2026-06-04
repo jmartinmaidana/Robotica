@@ -1,4 +1,4 @@
-/root/ros2_ws/src/robotica/install/ej2/lib/ej2/libcontrollers_lib.so
+/root/ros2_ws/src/robotica/install/ej2/lib/libcontrollers_lib.so
 /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl
 /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_generator
 /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_waypoints

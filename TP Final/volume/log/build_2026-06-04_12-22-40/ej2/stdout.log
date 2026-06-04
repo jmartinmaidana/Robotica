@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target controllers_lib[0m
+[ 18%] Built target trajectory_generator
+[ 36%] Built target trajectory_waypoints
+[ 54%] Built target logger
+[ 63%] [32mBuilding CXX object CMakeFiles/controllers_lib.dir/src/KinematicPositionController.cpp.o[0m
+[ 72%] [32m[1mLinking CXX shared library libcontrollers_lib.so[0m
+[ 81%] Built target controllers_lib
+[ 90%] [32m[1mLinking CXX executable trajectory_follower_cl[0m
+[100%] Built target trajectory_follower_cl
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/libcontrollers_lib.so
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/libcontrollers_lib.so" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl" to ""
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_generator
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_waypoints
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/logger
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include/ej2
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include/ej2/TrajectoryFollower.h
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/include/ej2/KinematicPositionController.h
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/launch
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/launch/lazo_abierto.launch.py
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/package_run_dependencies/ej2
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/parent_prefix_path/ej2
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/ament_prefix_path.sh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/path.sh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/path.dsv
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.bash
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.sh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.zsh
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/package.dsv
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/packages/ej2
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/cmake/ej2Config.cmake
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/cmake/ej2Config-version.cmake
+-- Up-to-date: /root/ros2_ws/src/robotica/install/ej2/share/ej2/package.xml

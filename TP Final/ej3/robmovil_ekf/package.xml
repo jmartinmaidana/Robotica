@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robmovil_ekf</name>
+  <version>0.0.0</version>
+  <description>The robmovil_ekf package</description>
+  <maintainer email="francisco.raverta@gmail.com">FranciscoRaverta</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+
+  <build_depend>robmovil_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>imu_laser</build_depend>
+  <build_depend>kfilter</build_depend>
+  <build_depend>imu_laser</build_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

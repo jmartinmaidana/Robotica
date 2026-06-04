@@ -2,6 +2,13 @@
 #include "ej2/KinematicPositionController.h"
 
 
+#define K_PX 1.
+#define K_PY 1.
+#define K_PTHETA 1.
+#define LOOKAHEAD 0.5 // Distancia minima necesaria entre el robot y el waypoint objetivo 
+#define TOLERANCE 0.05 // Distancia minima necesaria entre el robot y el waypoint final
+int last_idx = 0;
+
 
 KinematicPositionController::KinematicPositionController() :
   TrajectoryFollower(), tfBuffer_(this->get_clock()),transform_listener_( tfBuffer_ )
@@ -48,24 +55,6 @@ void KinematicPositionController::getCurrentPoseFromOdometry(const nav_msgs::msg
   a = yaw;
 }
 
-/**
- * NOTA: Para un sistema estable mantener:
- * - 0 < K_RHO
- * - K_RHO < K_ALPHA
- * - K_BETA < 0
- */
-// #define K_RHO 0.65 //por default 1, valor optimo 0.65
-// #define K_ALPHA 1.5
-// #define K_BETA -0.5
-// #define K_THETA 0.5
-// #define TOL 0.001
-
-#define K_PX 1.
-#define K_PY 1.
-#define K_PTHETA 1.
-#define LOOKAHEAD 0.5
-#define TOLERANCE 0.05
-int last_idx = 0;
 
 bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, double& vy, double& wz)
 {
@@ -100,39 +89,21 @@ bool KinematicPositionController::control(const rclcpp::Time& t, double& vx, dou
   double dx = goal_x - current_x;
   double dy = goal_y - current_y;
   double dtheta = angles::normalize_angle(goal_a - current_a); // VER SI ESTA RESTA ES ASI O AL REVES
-  // double ex = dx * cos(goal_a) + dy * sin(goal_a);
-  // double ey = -dx * sin(goal_a) + dy * cos(goal_a);
+
+  
+  // Pasamos de frame global a frame del robot
   double ex = dx * cos(current_a) + dy * sin(current_a);
   double ey = -dx * sin(current_a) + dy * cos(current_a);
-  
+  // double ex = dx * cos(goal_a) + dy * sin(goal_a);
+  // double ey = -dx * sin(goal_a) + dy * cos(goal_a);
 
-  // Computar variables del sistema de control
-
-  //DIFERENCIAL
-  // double rho = sqrt(dx*dx + dy*dy);
-  // double alpha = angles::normalize_angle(atan2(dy,dx)-theta); // Normalizes the angle to be -M_PI circle to +M_PI circle It takes and returns radians. 
-  // double beta =  angles::normalize_angle((-theta)-alpha); // Realizar el calculo dentro del metodo de normalizacion
-  
+  // CONTROL PROPORCIONAL
   vx = K_PX * ex;
   vy = K_PY * ey;
   wz  = K_PTHETA * dtheta;
 
-
-
-  // if (TOL > rho){
-  //   v = 0;
-  //   w = (K_ALPHA*alpha+K_BETA*beta) * K_THETA; 
-  // } else {
-  //   /* Calcular velocidad lineal y angular* 
-  //   * Existen constantes definidas al comienzo del archivo para
-  //   * K_RHO, K_ALPHA, K_BETA */
-  //   v = K_RHO*rho;
-  //   w = K_ALPHA*alpha+K_BETA*beta;
-  // }
   
-
-  
-    RCLCPP_INFO(this->get_logger(), "ex: %.2f, ey: %.2f, dtheta: %.2f, vx: %.2f, vy: %.2f, wz: %.2f",
+  RCLCPP_INFO(this->get_logger(), "ex: %.2f, ey: %.2f, dtheta: %.2f, vx: %.2f, vy: %.2f, wz: %.2f",
             ex, ey, dtheta, vx, vy, wz);
 
   RCLCPP_INFO(this->get_logger(), "goal_x: %.2f, goal_y: %.2f, goal_a: %.2f, current_x: %.2f, current_y: %.2f, current_a: %.2f",
@@ -151,7 +122,7 @@ bool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time& t, dou
   // Pose actual del robot
   double current_x = this->x;
   double current_y = this->y;
-  double current_a = this->a;
+  // double current_a = this->a; Hace falta?
 
   // Trajectory cargada
   const robmovil_msgs::msg::Trajectory& trajectory = getTrajectory();

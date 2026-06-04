@@ -1,0 +1,254 @@
+[0.014s] Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/robmovil_msgs -- -j8 -l8
+[0.136s] [  1%] Built target robmovil_msgs__rs
+[0.139s] [  2%] Built target robmovil_msgs__cpp
+[0.147s] [  2%] Built target ament_cmake_python_copy_robmovil_msgs
+[0.160s] [ 13%] Built target robmovil_msgs__rosidl_generator_c
+[0.177s] [ 25%] Built target robmovil_msgs__rosidl_typesupport_introspection_cpp
+[0.180s] [ 36%] Built target robmovil_msgs__rosidl_typesupport_cpp
+[0.184s] [ 47%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_cpp
+[0.193s] [ 58%] Built target robmovil_msgs__rosidl_typesupport_c
+[0.195s] [ 69%] Built target robmovil_msgs__rosidl_typesupport_introspection_c
+[0.199s] [ 80%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_c
+[0.220s] [ 80%] Built target robmovil_msgs
+[0.242s] [ 81%] Built target robmovil_msgs__py
+[0.273s] [ 91%] Built target robmovil_msgs__rosidl_generator_py
+[0.298s] [ 94%] Built target robmovil_msgs__rosidl_typesupport_introspection_c__pyext
+[0.298s] [ 97%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.300s] [100%] Built target robmovil_msgs__rosidl_typesupport_c__pyext
+[0.437s] running egg_info
+[0.439s] writing robmovil_msgs.egg-info/PKG-INFO
+[0.439s] writing dependency_links to robmovil_msgs.egg-info/dependency_links.txt
+[0.439s] writing top-level names to robmovil_msgs.egg-info/top_level.txt
+[0.442s] reading manifest file 'robmovil_msgs.egg-info/SOURCES.txt'
+[0.443s] writing manifest file 'robmovil_msgs.egg-info/SOURCES.txt'
+[0.476s] [100%] Built target ament_cmake_python_build_robmovil_msgs_egg
+[0.489s] Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/robmovil_msgs -- -j8 -l8
+[0.499s] Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/robmovil_msgs
+[0.507s] -- Install configuration: ""
+[0.508s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/rosidl_interfaces/robmovil_msgs
+[0.508s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs
+[0.508s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg
+[0.508s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.508s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/encoder_ticks.h
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__functions.c
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__functions.h
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__struct.h
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.h
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__functions.c
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__functions.h
+[0.509s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__struct.h
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.h
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__functions.c
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__functions.h
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__struct.h
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.h
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__functions.c
+[0.510s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__functions.h
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__struct.h
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.h
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__functions.c
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__functions.h
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__struct.h
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.h
+[0.511s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__functions.c
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__functions.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__struct.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/multi_encoder_ticks.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory_point.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark_array.h
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/library_path.sh
+[0.512s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/library_path.dsv
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_generator_c.so
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_fastrtps_c.h
+[0.513s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_fastrtps_c.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_c.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_c.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_fastrtps_c.so
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_c.h
+[0.514s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.c
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_c.h
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.c
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_c.h
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.c
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.c
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_c.h
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.c
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_c.h
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.c
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_introspection_c.so
+[0.515s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_c.so
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/encoder_ticks.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__builder.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__struct.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__traits.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__builder.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__struct.hpp
+[0.516s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__traits.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__builder.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__struct.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__traits.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__builder.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__struct.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__traits.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__builder.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__struct.hpp
+[0.517s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__traits.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__builder.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__struct.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__traits.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/multi_encoder_ticks.hpp
+[0.518s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory.hpp
+[0.519s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory_point.hpp
+[0.519s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark.hpp
+[0.519s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark_array.hpp
+[0.519s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_fastrtps_cpp.hpp
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/dds_fastrtps
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_fastrtps_cpp.hpp
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp
+[0.520s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_cpp.hpp
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_cpp.hpp
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.cpp
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_cpp.hpp
+[0.521s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.cpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.cpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.cpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_cpp.hpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.cpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_cpp.hpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.cpp
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_introspection_cpp.so
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_cpp.so
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/pythonpath.sh
+[0.522s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/pythonpath.dsv
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info
+[0.523s] -- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[0.523s] -- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.523s] -- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[0.523s] -- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/__init__.py
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_encoder_ticks.py
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_encoder_ticks_s.c
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_multi_encoder_ticks.py
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_multi_encoder_ticks_s.c
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory.py
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_s.c
+[0.523s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_point.py
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_point_s.c
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark.py
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_s.c
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_array.py
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_array_s.c
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/__init__.py
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_c.c
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/librobmovil_msgs__rosidl_generator_py.so
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.524s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.553s] Listing '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs'...
+[0.553s] Listing '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg'...
+[0.559s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.560s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.561s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.562s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_generator_py.so
+[0.563s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/rust_packages/robmovil_msgs
+[0.563s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust
+[0.563s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/src
+[0.563s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/src/msg.rs
+[0.563s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/src/msg
+[0.564s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/src/msg/rmw.rs
+[0.564s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/src/lib.rs
+[0.564s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/Cargo.toml
+[0.564s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/rust/build.rs
+[0.564s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/EncoderTicks.idl
+[0.564s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/MultiEncoderTicks.idl
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Trajectory.idl
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/TrajectoryPoint.idl
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Landmark.idl
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/LandmarkArray.idl
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/EncoderTicks.msg
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/MultiEncoderTicks.msg
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Trajectory.msg
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/TrajectoryPoint.msg
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Landmark.msg
+[0.565s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/LandmarkArray.msg
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/package_run_dependencies/robmovil_msgs
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/parent_prefix_path/robmovil_msgs
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/ament_prefix_path.sh
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/ament_prefix_path.dsv
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/path.sh
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/path.dsv
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.bash
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.sh
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.zsh
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.dsv
+[0.566s] -- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv
+[0.566s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/packages/robmovil_msgs
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cExport.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cExport.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cppExport.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.567s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cppExport.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_pyExport.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.568s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgsConfig.cmake
+[0.569s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgsConfig-version.cmake
+[0.569s] -- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.xml
+[0.571s] Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/robmovil_msgs

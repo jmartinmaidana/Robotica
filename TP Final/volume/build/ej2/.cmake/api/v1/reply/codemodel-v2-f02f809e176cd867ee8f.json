@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c6a8344d04711d7bd79d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ej2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "controllers_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controllers_lib-15c80f751b6682a504de.json",
+					"name" : "controllers_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ej2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ej2_uninstall-b48c17c5bb86cd32a13b.json",
+					"name" : "ej2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "logger::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-logger-58cc463f8a4f7346261e.json",
+					"name" : "logger",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_follower_cl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_follower_cl-0e5f9adb09819618af46.json",
+					"name" : "trajectory_follower_cl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_generator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_generator-6d634f0352f1df2428df.json",
+					"name" : "trajectory_generator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_waypoints::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_waypoints-8097f71fd649c049bf83.json",
+					"name" : "trajectory_waypoints",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c5d42a22d602aac8c809.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/ros2_ws/src/robotica/build/ej2",
+		"source" : "/root/ros2_ws/src/robotica/ej2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
