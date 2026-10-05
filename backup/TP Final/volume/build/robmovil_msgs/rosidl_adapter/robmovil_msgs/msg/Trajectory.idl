@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robmovil_msgs/msg/Trajectory.msg
+// generated code does not contain a copyright notice
+
+#include "robmovil_msgs/msg/TrajectoryPoint.idl"
+#include "std_msgs/msg/Header.idl"
+
+module robmovil_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "The header is used to specify the coordinate frame" "\n"
+      "and the reference time for the trajectory durations.")
+    struct Trajectory {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "List of Trajectory waypoints.")
+      sequence<robmovil_msgs::msg::TrajectoryPoint> points;
+    };
+  };
+};

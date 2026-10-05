@@ -1,0 +1,6 @@
+/root/ros2_ws/src/robotica/build/robmovil_msgs/rosidl_adapter/robmovil_msgs:msg/EncoderTicks.idl
+/root/ros2_ws/src/robotica/build/robmovil_msgs/rosidl_adapter/robmovil_msgs:msg/MultiEncoderTicks.idl
+/root/ros2_ws/src/robotica/build/robmovil_msgs/rosidl_adapter/robmovil_msgs:msg/Trajectory.idl
+/root/ros2_ws/src/robotica/build/robmovil_msgs/rosidl_adapter/robmovil_msgs:msg/TrajectoryPoint.idl
+/root/ros2_ws/src/robotica/build/robmovil_msgs/rosidl_adapter/robmovil_msgs:msg/Landmark.idl
+/root/ros2_ws/src/robotica/build/robmovil_msgs/rosidl_adapter/robmovil_msgs:msg/LandmarkArray.idl

@@ -7,11 +7,13 @@
 #define K_PTHETA 1.
 #define LOOKAHEAD 0.5 // Distancia minima necesaria entre el robot y el waypoint objetivo 
 #define TOLERANCE 0.05 // Distancia minima necesaria entre el robot y el waypoint final
-int last_idx = 0;
 
 
 KinematicPositionController::KinematicPositionController() :
-  TrajectoryFollower(), tfBuffer_(this->get_clock()),transform_listener_( tfBuffer_ )
+  TrajectoryFollower(), 
+  tfBuffer_(this->get_clock()),
+  transform_listener_( tfBuffer_ ),
+  last_idx(0)
 {
     rclcpp::QoS qos_profile(rclcpp::KeepLast(50));
     qos_profile.reliable();

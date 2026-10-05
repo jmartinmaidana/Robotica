@@ -1,0 +1,272 @@
+[0.232s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.232s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f8935f28f70>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f893609df00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f893609df00>>, mixin_verb=('build',))
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.464s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.465s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.465s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.466s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ros2_ws/src/robotica'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['colcon_pkg']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'colcon_pkg'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['colcon_meta']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'colcon_meta'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'ros'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['cmake', 'python']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'cmake'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'python'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['python_setup_py']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'python_setup_py'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extensions ['ignore', 'ignore_ament_install']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extension 'ignore'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extension 'ignore_ament_install'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extensions ['colcon_pkg']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extension 'colcon_pkg'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extensions ['colcon_meta']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extension 'colcon_meta'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ej1) by extension 'ros'
+[0.491s] DEBUG:colcon.colcon_core.package_identification:Package 'ej1' with type 'ros.ament_cmake' and name 'ej1'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extension 'ignore_ament_install'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extensions ['colcon_pkg']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extension 'colcon_pkg'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extensions ['colcon_meta']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extension 'colcon_meta'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extensions ['ros']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(ej2) by extension 'ros'
+[0.493s] DEBUG:colcon.colcon_core.package_identification:Package 'ej2' with type 'ros.ament_cmake' and name 'ej2'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'ros'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extensions ['cmake', 'python']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'cmake'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'python'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extensions ['python_setup_py']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(ej3) by extension 'python_setup_py'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'ros'
+[0.496s] DEBUG:colcon.colcon_core.package_identification:Package 'robmovil_msgs' with type 'ros.ament_cmake' and name 'robmovil_msgs'
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_target' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.541s] DEBUG:colcon.colcon_core.verb:Building package 'robmovil_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/robmovil_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/robmovil_msgs', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/robmovil_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'cmake_target' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'cmake_clean_first' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'cmake_force_configure' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'ament_cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.542s] DEBUG:colcon.colcon_core.verb:Building package 'ej1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/ej1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/ej1', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/ej1', 'symlink_install': False, 'test_result_base': None}
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'cmake_target' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'cmake_clean_first' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'cmake_force_configure' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'ament_cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'ej2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.543s] DEBUG:colcon.colcon_core.verb:Building package 'ej2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/ej2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/ej2', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/ej2', 'symlink_install': False, 'test_result_base': None}
+[0.543s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.544s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.545s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/robmovil_msgs' with build type 'ament_cmake'
+[0.545s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/robmovil_msgs'
+[0.548s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.548s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/robotica/robmovil_msgs -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/robmovil_msgs
+[2.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/robotica/robmovil_msgs -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/robmovil_msgs
+[2.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/robmovil_msgs -- -j8 -l8
+[9.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/robmovil_msgs -- -j8 -l8
+[9.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/robmovil_msgs
+[9.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robmovil_msgs)
+[9.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/robmovil_msgs
+[9.217s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake module files
+[9.217s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake config files
+[9.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'cmake_prefix_path')
+[9.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.ps1'
+[9.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.dsv'
+[9.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.sh'
+[9.220s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib'
+[9.220s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'ld_library_path_lib')
+[9.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.ps1'
+[9.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.dsv'
+[9.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.sh'
+[9.221s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[9.221s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/pkgconfig/robmovil_msgs.pc'
+[9.224s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/python3.10/site-packages'
+[9.224s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[9.224s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.ps1'
+[9.226s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv'
+[9.226s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.sh'
+[9.227s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.bash'
+[9.228s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.zsh'
+[9.229s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/robmovil_msgs/share/colcon-core/packages/robmovil_msgs)
+[9.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robmovil_msgs)
+[9.230s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake module files
+[9.231s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake config files
+[9.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'cmake_prefix_path')
+[9.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.ps1'
+[9.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.dsv'
+[9.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.sh'
+[9.232s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib'
+[9.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'ld_library_path_lib')
+[9.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.ps1'
+[9.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.dsv'
+[9.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.sh'
+[9.234s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[9.234s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/pkgconfig/robmovil_msgs.pc'
+[9.234s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/python3.10/site-packages'
+[9.234s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[9.235s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.ps1'
+[9.235s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv'
+[9.236s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.sh'
+[9.236s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.bash'
+[9.237s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.zsh'
+[9.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/robmovil_msgs/share/colcon-core/packages/robmovil_msgs)
+[9.237s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/ej1' with build type 'ament_cmake'
+[9.237s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/ej1'
+[9.238s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.238s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.244s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/ej2' with build type 'ament_cmake'
+[9.244s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/ej2'
+[9.245s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.245s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/ej1': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/ej1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/ej1
+[9.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/ej2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/ej2 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/ej2
+[11.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/ej1' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/ej1 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/ej1
+[11.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/ej1': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej1 -- -j8 -l8
+[11.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/ej2' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/ej2 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/ej2
+[11.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/ej2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej2 -- -j8 -l8
+[30.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/ej1' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej1 -- -j8 -l8
+[30.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/ej1': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/ej1
+[30.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ej1)
+[30.517s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1' for CMake module files
+[30.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/ej1' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/ej1
+[30.518s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1' for CMake config files
+[30.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('ej1', 'cmake_prefix_path')
+[30.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/ej1/share/ej1/hook/cmake_prefix_path.ps1'
+[30.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/ej1/share/ej1/hook/cmake_prefix_path.dsv'
+[30.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/ej1/share/ej1/hook/cmake_prefix_path.sh'
+[30.525s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/lib'
+[30.526s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/bin'
+[30.526s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/lib/pkgconfig/ej1.pc'
+[30.527s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/lib/python3.10/site-packages'
+[30.527s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/bin'
+[30.528s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.ps1'
+[30.529s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.dsv'
+[30.529s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.sh'
+[30.530s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.bash'
+[30.530s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.zsh'
+[30.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/ej1/share/colcon-core/packages/ej1)
+[30.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ej1)
+[30.532s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1' for CMake module files
+[30.533s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1' for CMake config files
+[30.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('ej1', 'cmake_prefix_path')
+[30.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/ej1/share/ej1/hook/cmake_prefix_path.ps1'
+[30.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/ej1/share/ej1/hook/cmake_prefix_path.dsv'
+[30.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/ej1/share/ej1/hook/cmake_prefix_path.sh'
+[30.535s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/lib'
+[30.535s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/bin'
+[30.535s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/lib/pkgconfig/ej1.pc'
+[30.536s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/lib/python3.10/site-packages'
+[30.537s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej1/bin'
+[30.537s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.ps1'
+[30.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.dsv'
+[30.539s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.sh'
+[30.540s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.bash'
+[30.542s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.zsh'
+[30.543s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/ej1/share/colcon-core/packages/ej1)
+[33.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/ej2' returned '2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej2 -- -j8 -l8
+[33.419s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ej2)
+[33.419s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej2' for CMake module files
+[33.419s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej2' for CMake config files
+[33.420s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej2/bin'
+[33.420s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej2/lib/pkgconfig/ej2.pc'
+[33.420s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej2/lib/python3.10/site-packages'
+[33.421s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/ej2/bin'
+[33.421s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej2/share/ej2/package.ps1'
+[33.422s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/ej2/share/ej2/package.dsv'
+[33.422s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej2/share/ej2/package.sh'
+[33.423s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej2/share/ej2/package.bash'
+[33.423s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/ej2/share/ej2/package.zsh'
+[33.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/ej2/share/colcon-core/packages/ej2)
+[33.435s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[33.435s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[33.435s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[33.436s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[33.459s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[33.459s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[33.459s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[33.459s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[33.465s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[33.466s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[33.467s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.ps1'
+[33.469s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/src/robotica/install/_local_setup_util_ps1.py'
+[33.471s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.ps1'
+[33.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.sh'
+[33.476s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/src/robotica/install/_local_setup_util_sh.py'
+[33.478s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.sh'
+[33.479s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.bash'
+[33.480s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.bash'
+[33.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.zsh'
+[33.482s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.zsh'

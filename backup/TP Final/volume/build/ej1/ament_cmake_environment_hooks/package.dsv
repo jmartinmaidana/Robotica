@@ -1,0 +1,4 @@
+source;share/ej1/local_setup.bash
+source;share/ej1/local_setup.dsv
+source;share/ej1/local_setup.sh
+source;share/ej1/local_setup.zsh

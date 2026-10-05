@@ -37,3 +37,8 @@ El flujo completo utilizando Docker y CoppeliaSim es el siguiente:
 2. Al ejecutar `ros2 run ej1 pioneer_odometry_node`, se lanza este nodo.
 3. Mientras el robot corre en Coppelia, el nodo lee constantemente los encoders simulados para calcular dónde está el robot en el espacio.
 4. Simultáneamente, escucha los comandos del teclado (vía `teleop_twist_keyboard`) para traducir la intención de movimiento a velocidades de giro reales de cada una de las 4 ruedas omnidireccionales en la simulación.
+
+
+## PROBLEMAS:
+1- Nunca se visualizaba base_link en el rviz2: resuelto en linea 180 de `pioneer_odometry_node.cpp`
+2- Las 4 ruedas se desplazan desfasadas del base_link_gt

@@ -47,6 +47,7 @@ coppeliaSim.sh
 Dentro de Coppelia, ve a **File > Open Scene**, navega por la ruta `/root/ros2_ws/src/robotica/coppeliaSim`, y abre el archivo `omni_ekf.ttt` (o la escena que vayas a usar).
 
 ## 5. Ejecutar Nodos de ROS 2
+### Ejercicio 1
 Para mover el robot con el teclado, abre **otra terminal nueva** (`bash start-docker.sh open`), ejecuta el `source install/setup.bash` y corre:
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:=/robot/cmd_vel
@@ -55,3 +56,11 @@ En **otra terminal adicional** (con su respectivo `source`), inicia el nodo de l
 ```bash
 ros2 run ej1 pioneer_odometry_node
 ```
+### Ejercicio 2
+```bash
+ros2 launch ej2 lazo_abierto.launch.py
+ros2 run ej2 kinematic_position_controller_node
+```
+
+### Limpieza de compilacion:
+rm -rf build/ install/ log/

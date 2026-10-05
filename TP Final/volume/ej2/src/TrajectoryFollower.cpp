@@ -7,7 +7,7 @@ TrajectoryFollower::TrajectoryFollower() : Node("nodeTrajectoryFollower")
   qos_profile.reliable();
   qos_profile.transient_local();
 
-  cmd_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", rclcpp::QoS(10));
+  cmd_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/robot/cmd_vel", rclcpp::QoS(10));
 
   trajectory_sub_ = this->create_subscription<robmovil_msgs::msg::Trajectory>("/robot/trajectory", qos_profile, std::bind(&TrajectoryFollower::handleNewTrajectory, this, std::placeholders::_1));
 }

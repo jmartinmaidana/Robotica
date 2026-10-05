@@ -17,10 +17,10 @@ def generate_launch_description():
             executable='trajectory_follower_cl',
             name='trajectory_follower',
             output='screen',
-            parameters=[{'use_sim_time': True}],
-            remappings=[
-                ('cmd_vel', '/robot/cmd_vel')
-            ] #VER SI ESTO ES NECESARIO O SE PUEDE PUBLICAR DIRECTAMENTE EN /cmd_vel DESDE EL CONTROLADOR
+            parameters=[{'use_sim_time': True}]
+            #remappings=[
+            #    ('cmd_vel', '/robot/cmd_vel')
+            #] #VER SI ESTO ES NECESARIO O SE PUEDE PUBLICAR DIRECTAMENTE EN /cmd_vel DESDE EL CONTROLADOR
         ),
 
         # Node(
@@ -39,7 +39,7 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {'use_sim_time': True},
-                {'stepping': 0.1},
+                {'stepping': 0.05},
                 {'trajectory_type': 'square'},
                 {'total_time': 5.0},
                 {'amplitude': 1.0},

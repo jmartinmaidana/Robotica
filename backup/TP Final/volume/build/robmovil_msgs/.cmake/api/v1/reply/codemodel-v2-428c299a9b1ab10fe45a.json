@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d06a07b11e02655dbfb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "robmovil_msgs__py",
+					"jsonFile" : "directory-robmovil_msgs__py-2b16113c994cd6d258b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/root/ros2_ws/src/robotica/build/robmovil_msgs/robmovil_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "robmovil_msgs__rs",
+					"jsonFile" : "directory-robmovil_msgs__rs-6435f3c80b0f0d59b45a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/root/ros2_ws/src/robotica/build/robmovil_msgs/robmovil_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "robmovil_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_robmovil_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_robmovil_msgs_egg-045d6c91af3cba1bf276.json",
+					"name" : "ament_cmake_python_build_robmovil_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_robmovil_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_robmovil_msgs-7d93d812ab8522b3b8dc.json",
+					"name" : "ament_cmake_python_copy_robmovil_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs-4858e103a804548f71c1.json",
+					"name" : "robmovil_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__cpp-d43123ca9d7c52dafb3a.json",
+					"name" : "robmovil_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "robmovil_msgs__py::@7b97afefd3beb19a5c95",
+					"jsonFile" : "target-robmovil_msgs__py-51e932e40bb6a32d9e6a.json",
+					"name" : "robmovil_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_generator_c-639d04c64642393600f2.json",
+					"name" : "robmovil_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_generator_py-abd7417bcae81887d3fe.json",
+					"name" : "robmovil_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_c-d92412467c593f1b050d.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_c__pyext-e6a6eada0dabdacf654c.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_cpp-a149592c88340529212f.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_fastrtps_c-20de2c58d7aea591127e.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_fastrtps_c__pyext-0d3d82ac01bec54c3a04.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_fastrtps_cpp-5cd3f462175237698e62.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_introspection_c-9d7755f7b1324d018dbe.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_introspection_c__pyext-def6f2dcf8343cd929d6.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs__rosidl_typesupport_introspection_cpp-ab9965568857caec10e1.json",
+					"name" : "robmovil_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "robmovil_msgs__rs::@fadfaf1746c64c1fdca6",
+					"jsonFile" : "target-robmovil_msgs__rs-b38ccf935f8a4c474ce7.json",
+					"name" : "robmovil_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robmovil_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robmovil_msgs_uninstall-3a95190fe5297dabfa30.json",
+					"name" : "robmovil_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0dddc7c6d46f8bda02d3.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/ros2_ws/src/robotica/build/robmovil_msgs",
+		"source" : "/root/ros2_ws/src/robotica/robmovil_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

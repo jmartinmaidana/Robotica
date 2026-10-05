@@ -1,0 +1,13 @@
+setup.py
+robmovil_msgs/__init__.py
+robmovil_msgs.egg-info/PKG-INFO
+robmovil_msgs.egg-info/SOURCES.txt
+robmovil_msgs.egg-info/dependency_links.txt
+robmovil_msgs.egg-info/top_level.txt
+robmovil_msgs/msg/__init__.py
+robmovil_msgs/msg/_encoder_ticks.py
+robmovil_msgs/msg/_landmark.py
+robmovil_msgs/msg/_landmark_array.py
+robmovil_msgs/msg/_multi_encoder_ticks.py
+robmovil_msgs/msg/_trajectory.py
+robmovil_msgs/msg/_trajectory_point.py

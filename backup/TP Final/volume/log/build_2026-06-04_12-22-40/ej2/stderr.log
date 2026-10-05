@@ -1,0 +1,4 @@
+[01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:[m[K In member function ‘[01m[Kbool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time&, double&, double&, double&)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:149:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  149 | bool KinematicPositionController::getPursuitBasedGoal([01;35m[Kconst rclcpp::Time& t[m[K, double& x, double& y, double& a)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^[m[K

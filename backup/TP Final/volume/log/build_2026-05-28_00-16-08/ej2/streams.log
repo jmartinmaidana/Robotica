@@ -1,0 +1,88 @@
+[0.016s] Invoking command in '/root/ros2_ws/src/robotica/build/ej2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/ej2 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/ej2
+[0.086s] -- The C compiler identification is GNU 11.4.0
+[0.151s] -- The CXX compiler identification is GNU 11.4.0
+[0.160s] -- Detecting C compiler ABI info
+[0.245s] -- Detecting C compiler ABI info - done
+[0.255s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.255s] -- Detecting C compile features
+[0.255s] -- Detecting C compile features - done
+[0.259s] -- Detecting CXX compiler ABI info
+[0.355s] -- Detecting CXX compiler ABI info - done
+[0.365s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.365s] -- Detecting CXX compile features
+[0.366s] -- Detecting CXX compile features - done
+[0.371s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.580s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.718s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.783s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.791s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.803s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.820s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.843s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.941s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.946s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.068s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.106s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.170s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.188s] -- Looking for pthread.h
+[1.302s] -- Looking for pthread.h - found
+[1.303s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.411s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.412s] -- Found Threads: TRUE  
+[1.492s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.511s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.536s] -- Found robmovil_msgs: 0.0.0 (/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake)
+[1.574s] -- Found trajectory_msgs: 4.9.1 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.614s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[1.632s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.772s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.798s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.800s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.800s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.805s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[1.902s] -- Configuring done
+[1.942s] -- Generating done
+[1.957s] -- Build files have been written to: /root/ros2_ws/src/robotica/build/ej2
+[1.974s] Invoked command in '/root/ros2_ws/src/robotica/build/ej2' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/ej2 -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/ej2
+[1.977s] Invoking command in '/root/ros2_ws/src/robotica/build/ej2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej2 -- -j8 -l8
+[2.049s] [  9%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o[0m
+[2.054s] [ 18%] [32mBuilding CXX object CMakeFiles/logger.dir/src/logger_node.cpp.o[0m
+[2.061s] [ 27%] [32mBuilding CXX object CMakeFiles/controllers_lib.dir/src/KinematicPositionController.cpp.o[0m
+[2.064s] [ 36%] [32mBuilding CXX object CMakeFiles/controllers_lib.dir/src/TrajectoryFollower.cpp.o[0m
+[2.066s] [ 45%] [32mBuilding CXX object CMakeFiles/trajectory_waypoints.dir/src/trajectory_waypoints_node.cpp.o[0m
+[7.326s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.329s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_destroy_publisher[m[K’?
+[7.329s]    37 |   [01;31m[Ktrajectory_publisher[m[K = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/robot/trajectory", qos_profile);
+[7.329s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.329s]       |   [32m[Krmw_destroy_publisher[m[K
+[7.330s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[7.330s]    37 |   trajectory_publisher = [01;31m[Kthis[m[K->create_publisher<trajectory_msgs::msg::JointTrajectory>("/robot/trajectory", qos_profile);
+[7.330s]       |                          [01;31m[K^~~~[m[K
+[7.330s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:86:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[7.330s]    37 |   trajectory_publisher = this->create_publisher<trajectory_msgs::msg::JointTrajectory[01;31m[K>[m[K("/robot/trajectory", qos_profile);
+[7.330s]       |                                                                                      [01;31m[K^[m[K
+[7.331s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_waypoints_node.cpp:37:88:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[7.331s]    37 |   trajectory_publisher = this->create_publisher<trajectory_msgs::msg::JointTrajectory>([01;35m[K"/robot/trajectory"[m[K, qos_profile);
+[7.331s]       |                                                                                        [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[7.387s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.387s] [01m[K/root/ros2_ws/src/robotica/ej2/src/trajectory_generator_node.cpp:65:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[7.387s]    65 |     for(int i = 0; [01;35m[Ki < spline_waypoints_data.size()[m[K; i+=4)
+[7.387s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.049s] [01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:[m[K In member function ‘[01m[Kbool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time&, double&, double&, double&)[m[K’:
+[8.049s] [01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:154:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_a[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[8.049s]   154 |   double [01;35m[Kcurrent_a[m[K = this->a;
+[8.049s]       |          [01;35m[K^~~~~~~~~[m[K
+[8.049s] [01m[K/root/ros2_ws/src/robotica/ej2/src/KinematicPositionController.cpp:149:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[8.049s]   149 | bool KinematicPositionController::getPursuitBasedGoal([01;35m[Kconst rclcpp::Time& t[m[K, double& x, double& y, double& a)
+[8.050s]       |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~^[m[K
+[8.162s] gmake[2]: *** [CMakeFiles/trajectory_waypoints.dir/build.make:76: CMakeFiles/trajectory_waypoints.dir/src/trajectory_waypoints_node.cpp.o] Error 1
+[8.162s] gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/trajectory_waypoints.dir/all] Error 2
+[8.163s] gmake[1]: *** Waiting for unfinished jobs....
+[11.537s] [ 54%] [32m[1mLinking CXX executable trajectory_generator[0m
+[12.111s] [ 54%] Built target trajectory_generator
+[16.646s] [ 63%] [32m[1mLinking CXX shared library libcontrollers_lib.so[0m
+[17.639s] [ 63%] Built target controllers_lib
+[23.315s] [ 72%] [32m[1mLinking CXX executable logger[0m
+[24.166s] [ 72%] Built target logger
+[24.168s] gmake: *** [Makefile:146: all] Error 2
+[24.174s] Invoked command in '/root/ros2_ws/src/robotica/build/ej2' returned '2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/ej2:/root/ros2_ws/install/ej1:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/ej2 -- -j8 -l8

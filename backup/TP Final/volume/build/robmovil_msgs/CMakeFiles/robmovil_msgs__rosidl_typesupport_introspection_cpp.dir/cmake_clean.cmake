@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/encoder_ticks__type_support.cpp.o"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/encoder_ticks__type_support.cpp.o.d"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark__type_support.cpp.o"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark__type_support.cpp.o.d"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark_array__type_support.cpp.o"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark_array__type_support.cpp.o.d"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.cpp.o"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.cpp.o.d"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory__type_support.cpp.o"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory__type_support.cpp.o.d"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory_point__type_support.cpp.o"
+  "CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory_point__type_support.cpp.o.d"
+  "librobmovil_msgs__rosidl_typesupport_introspection_cpp.pdb"
+  "librobmovil_msgs__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/encoder_ticks__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/landmark_array__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robmovil_msgs/msg/detail/trajectory_point__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/robmovil_msgs__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

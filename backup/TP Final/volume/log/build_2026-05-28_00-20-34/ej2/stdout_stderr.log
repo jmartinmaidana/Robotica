@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[35m[1mConsolidate compiler generated dependencies of target controllers_lib[0m
+[35m[1mConsolidate compiler generated dependencies of target trajectory_waypoints[0m
+[35m[1mConsolidate compiler generated dependencies of target logger[0m
+[ 27%] Built target trajectory_generator
+[ 27%] [32mBuilding CXX object CMakeFiles/trajectory_waypoints.dir/src/trajectory_waypoints_node.cpp.o[0m
+[ 54%] Built target controllers_lib
+[ 72%] Built target logger
+[ 81%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable trajectory_follower_cl[0m
+[ 90%] Built target trajectory_follower_cl
+[100%] [32m[1mLinking CXX executable trajectory_waypoints[0m
+[100%] Built target trajectory_waypoints
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/libcontrollers_lib.so
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/libcontrollers_lib.so" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_follower_cl" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_generator
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_generator" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_waypoints
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/trajectory_waypoints" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/lib/ej2/logger
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/ej2/lib/ej2/logger" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/include
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/include/ej2
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/include/ej2/TrajectoryFollower.h
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/include/ej2/KinematicPositionController.h
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/launch
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/launch/lazo_abierto.launch.py
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/package_run_dependencies/ej2
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/parent_prefix_path/ej2
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/environment/path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.bash
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.sh
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.zsh
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/local_setup.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/package.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ament_index/resource_index/packages/ej2
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/cmake/ej2Config.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/cmake/ej2Config-version.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/ej2/share/ej2/package.xml

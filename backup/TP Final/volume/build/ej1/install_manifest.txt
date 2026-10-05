@@ -1,0 +1,16 @@
+/root/ros2_ws/src/robotica/install/ej1/lib/ej1/pioneer_odometry_node
+/root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/package_run_dependencies/ej1
+/root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/parent_prefix_path/ej1
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/ament_prefix_path.sh
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/ament_prefix_path.dsv
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/path.sh
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/environment/path.dsv
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.bash
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.sh
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.zsh
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/local_setup.dsv
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.dsv
+/root/ros2_ws/src/robotica/install/ej1/share/ament_index/resource_index/packages/ej1
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/cmake/ej1Config.cmake
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/cmake/ej1Config-version.cmake
+/root/ros2_ws/src/robotica/install/ej1/share/ej1/package.xml

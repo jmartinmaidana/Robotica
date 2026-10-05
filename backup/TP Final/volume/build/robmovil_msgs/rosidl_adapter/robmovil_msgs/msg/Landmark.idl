@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robmovil_msgs/msg/Landmark.msg
+// generated code does not contain a copyright notice
+
+
+module robmovil_msgs {
+  module msg {
+    struct Landmark {
+      float range;
+
+      float bearing;
+    };
+  };
+};

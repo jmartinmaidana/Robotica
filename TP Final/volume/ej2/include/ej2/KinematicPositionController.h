@@ -34,7 +34,7 @@ class KinematicPositionController : public TrajectoryFollower
 
     
     GoalSelectionType goal_selection_;
-    
+    int last_idx = 0;
     double fixed_goal_x_;
     double fixed_goal_y_;
     double fixed_goal_a_;
